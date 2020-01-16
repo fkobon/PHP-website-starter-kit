@@ -1,0 +1,52 @@
+{
+  "description": "A PHP website starter kit with SASS and JS linting and processing, live browser reload and EditorConfig.",
+  "author": "https://github.com/divpusher",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --watch --hide-modules",
+    "check": "npm run check:css && npm run check:js",
+    "check:js": "echo Checking JS files... && eslint resources/js/**",
+    "check:css": "echo Checking CSS files... && stylelint resources/sass/**/*.scss"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "babel-preset-minify": "^0.5.1",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^3.4.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "stylelint": "^12.0.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-webpack-plugin": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {},
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "ignoreFiles": [
+      "resources/sass/_reset.scss"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true
+    },
+    "extends": "airbnb-base",
+    "rules": {
+      "no-console": "off"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import 'reset';
+@import 'variables';
+
+body {
+  font-family: $font-family;
+  color: $primary-color;
+  line-height: 22px;
+  font-size: 15px;
+}
+
+.wrapper {
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.narrow {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 22px;
+}
+
+ul li {
+  list-style-type: '- ';
+  margin-left: 20px;
+}
