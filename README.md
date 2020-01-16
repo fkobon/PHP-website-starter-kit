@@ -64,7 +64,8 @@ Add a new item in virtual hosting configuration, eg. `apache2/conf/extra/httpd-v
 ```
 Make sure the root points to the project's `public` folder. Start or restart your Apache server to apply changes.
 
-Open the `.env` configuration file in your project's root, uncomment the `app.baseURL` line and set its value to your local custom development domain, e.g.: `myproject.local`
+
+Rename `env` configuration file to `.env`  in your project's root, open it, uncomment the `app.baseURL` line and set its value to your local custom development domain, e.g.: `myproject.local`
 
 In your terminal run the following command to launch file watching, processing and live browser reload:
 
