@@ -1,3 +1,4 @@
+
 # PHP website starter kit
 A well configured, minimal skeleton to kickstart modern website development projects.
 
@@ -65,7 +66,7 @@ Add a new item in virtual hosting configuration, eg. `apache2/conf/extra/httpd-v
 Make sure the root points to the project's `public` folder. Start or restart your Apache server to apply changes.
 
 
-Rename `env` configuration file to `.env`  in your project's root, open it, uncomment the `app.baseURL` line and set its value to your local custom development domain, e.g.: `myproject.local`
+Rename the `env` configuration file to `.env`  in your project's root, open it, uncomment the `app.baseURL` line and set its value to your local custom development domain, e.g.: `myproject.local`
 
 In your terminal run the following command to launch file watching, processing and live browser reload:
 
@@ -74,39 +75,16 @@ In your terminal run the following command to launch file watching, processing a
 Visit http://myproject.local in your browser and start the development!
 
 ## Folder and file structure
-```
-/public/css/
-```
-Place of the compiled, production-ready CSS files.
+|  |  |
+|--|--|
+| /public/css | Place of the compiled, production-ready CSS files. |
+| /public/js/ | Place of the compiled, production-ready JavaScript files. |
+| /resources/ | All non-PHP files which should be processed. |
+| /resources/js/ | The place to store uncompiled JavaScript files. |
+| /resources/sass/ | The place to store the SASS files. |
+| .editorconfig | Configuration file of [EditorConfig](https://editorconfig.org/), a tool that helps to maintain consistent coding styles across various code editors and developers. |
+| webpack.config.js | [Webpack](https://webpack.js.org/) configuration file. It helps in bundling and processing the source files. |
 
-```
-/public/js/
-```
-Place of the compiled, production-ready JavaScript files.
 
-```
-/resources/
-```
-All non-PHP files which should be processed.
-
-```
-/resources/js/
-```
-The place to store uncompiled JavaScript files.
-
-```
-/resources/sass/
-```
-The place to store the SASS files.
-
-```
-.editorconfig
-```
-Configuration file of [EditorConfig](https://editorconfig.org/), a tool that helps to maintain consistent coding styles across various code editors and developers.
-
-```
-webpack.config.js
-```
-[Webpack](https://webpack.js.org/) configuration file. It helps in bundling and processing the source files.
 
 The rest is part of CodeIgniter. [Click here](https://codeigniter4.github.io/userguide/concepts/structure.html) to learn more about its structure.

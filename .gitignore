@@ -129,3 +129,10 @@ nb-configuration.xml
 # NodeJS
 #-------------------------
 node_modules/
+
+
+#-------------------------
+# Compiled files
+#-------------------------
+public/css/
+public/js/

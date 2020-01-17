@@ -1,4 +1,4 @@
-<?= $this->include('header') ?>
+<?= $this->include('_header') ?>
 
 <div class="wrapper narrow">
 	<h1>PHP website starter kit</h1>
@@ -12,4 +12,4 @@
 	</ul>
 </div>
 
-<?= $this->include('footer') ?>
+<?= $this->include('_footer') ?>
