@@ -1,4 +1,5 @@
 
+
 # PHP website starter kit
 A well configured, minimal skeleton to kickstart modern website development projects.
 
@@ -75,16 +76,30 @@ In your terminal run the following command to launch file watching, processing a
 Visit http://myproject.local in your browser and start the development!
 
 ## Folder and file structure
-|  |  |
+| File/folder | Description |
 |--|--|
-| /public/css | Place of the compiled, production-ready CSS files. |
-| /public/js/ | Place of the compiled, production-ready JavaScript files. |
+| /app/ | All PHP files of your project, except tests. |
+| &ensp; Config/ | Configuration files for autoload, email, routes, etc. You can override some of these in `.env` file. |
+| &ensp; Controllers/ | Controllers handle incoming requests. |
+| &ensp; Database/ | Stores the database migrations and seeds files. |
+| &ensp; Filters/ | Stores filter classes that can run before and after controller. |
+| &ensp; Helpers/ | Smaller, custom functions. |
+| &ensp; Language/ | Translations go here. |
+| &ensp; Libraries/ | Your own, reusable modules go here, e.g.: Authentication, etc. |
+| &ensp; Models/ | Database models. |
+| &ensp; ThirdParty/ | If you can't or don't want to install an external library with Composer, you can place it here and load it in `app/Config/Autoload.php`  |
+| &ensp; Views/ | Views create the HTML that is displayed to the client. |
+| /public/ | The browser-accessible portion of your website, preventing direct access to your source code. This folder is meant to be the “web root” of your site, and your web server would be configured to point to it. |
+| &ensp; css/ | Place of the compiled, production-ready CSS files. |
+| &ensp; js/ | Place of the compiled, production-ready JavaScript files. |
 | /resources/ | All non-PHP files which should be processed. |
-| /resources/js/ | The place to store uncompiled JavaScript files. |
-| /resources/sass/ | The place to store the SASS files. |
+| &ensp; js/ | The place to store uncompiled JavaScript files. |
+| &ensp;  sass/ | The place to store the SASS files. |
+| /tests/ | All tests go here. |
+| /writable/ | Logs, cache files, user uploads. |
 | .editorconfig | Configuration file of [EditorConfig](https://editorconfig.org/), a tool that helps to maintain consistent coding styles across various code editors and developers. |
 | webpack.config.js | [Webpack](https://webpack.js.org/) configuration file. It helps in bundling and processing the source files. |
 
 
 
-The rest is part of CodeIgniter. [Click here](https://codeigniter4.github.io/userguide/concepts/structure.html) to learn more about its structure.
+Read [CodeIgniter's documentation](https://codeigniter4.github.io/userguide/concepts/structure.html) to learn more about the structure.

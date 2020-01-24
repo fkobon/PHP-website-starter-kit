@@ -96,15 +96,3 @@ CI_ENVIRONMENT = 'development'
 #  honeypot.label = 'Fill This Field'
 #  honeypot.name = 'honeypot'
 #  honeypot.template = '<label>{label}</label><input type="text" name="{name}" value=""/>'
-
-#--------------------------------------------------------------------
-# E-MAIL
-#
-# Use https://mailtrap.io to test e-mails on your local server.
-#--------------------------------------------------------------------
-
-# email.development.protocol = ''
-# email.development.smtp_host = ''
-# email.development.smtp_port = ''
-# email.development.smtp_user = ''
-# email.development.smtp_pass = ''
