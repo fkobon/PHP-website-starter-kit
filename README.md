@@ -35,7 +35,7 @@ Open your terminal, go into the `project` folder and run the following command:
 
 ## Usage
 #### Quick start with PHP's built-in server
-In your terminal run the following command to launch file watching, processing and live browser reload:
+Rename the `env` configuration file to `.env`  in your project's root. In your terminal run the following command to launch file watching, processing and live browser reload:
 
 `npm run dev`
 
