@@ -26,7 +26,15 @@ module.exports = [
             {
               loader: 'babel-loader',
               options: {
-                presets: ['minify', '@babel/preset-env']
+                presets: [
+                  [
+                    'minify',
+                    {
+                      builtIns: false,
+                    }
+                  ],
+                  '@babel/preset-env'
+                ]
               }
             },
             'eslint-loader'
@@ -40,7 +48,10 @@ module.exports = [
             },
             {
               loader: 'css-loader',
-              options: { importLoaders: 1 }
+              options: {
+                importLoaders: 1,
+                url: false
+              }
             },
             {
               loader: 'postcss-loader',
