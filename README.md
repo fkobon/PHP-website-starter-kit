@@ -103,3 +103,12 @@ Visit http://myproject.local in your browser and start the development!
 
 
 Read [CodeIgniter's documentation](https://codeigniter4.github.io/userguide/concepts/structure.html) to learn more about the structure.
+
+
+## Updating CodeIgniter 4
+
+Run `composer update`.
+
+Download the [latest codeigniter framework](https://github.com/codeigniter4/framework).
+
+Compare files in `app/Config` folder 1-by-1 to see what changed and update your code.
